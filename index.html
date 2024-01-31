@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Currency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Currency Convertor</h1>
+        <p>Enter Amount</p>
+        <input type="number" class="amount" value="1" />
+        <div class="from-to-container">
+          <div class="from">
+            <p>From</p>
+            <div class="select-cont">
+              <img src="https://flagsapi.com/US/flat/64.png" class="flag" />
+              <select class="curr from" name="from"></select>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right-arrow-left icon"></i>
+          <div class="to">
+            <p>To</p>
+            <div class="select-cont">
+              <img src="https://flagsapi.com/IN/flat/64.png" class="flag" />
+              <select class="curr to" name="to"></select>
+            </div>
+          </div>
+        </div>
+        <p class="rate"></p>
+        <button class="btn">Get Exchange Return</button>
+      </div>
+    </div>
+    <script src="code.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
